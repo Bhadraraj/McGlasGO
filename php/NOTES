@@ -1,0 +1,6 @@
+cmd-1 = composer install
+optional= composer update -if the composer is already installed.
+If need php mailer = composer require phpmailer/phpmailer.
+
+To get a passcode for the mail-> mail-> Manage Account-> Security-> two Step Verification-> App Password-> Create App->
+this will generate a pass key for the mail.

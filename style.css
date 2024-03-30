@@ -1,0 +1,1473 @@
+@import url(./assets/fonts/goboldFont2.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font-color: #ffffff;
+    --secondary-font-color: #e51b43;
+    --primary-section-bg: #eef8fb;
+    --secondary-section-bg: #000000;
+}
+
+/* __________________________________________________RESET DEFAULT PROPERTY  STARTS HERE______________________________________________________________________*/
+h1 {
+    font-size: 88px;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 15px;
+}
+
+h1,
+h2,
+h4 {
+    font-family: "Gobold Extra2";
+    font-weight: 400;
+
+}
+
+h3,
+p,
+h5 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* __________________________________________________RESET DEFAULT PROPERTY ENDS HERE______________________________________________________________________*/
+
+
+
+
+
+
+
+/* ____________________________________________________PRELOADER STARTS  HERE______________________________________________________________________*/
+
+
+.preload .text {
+    background: rgb(229, 27, 64);
+    background: linear-gradient(90deg, rgba(229, 27, 64, 1) 0%, rgba(101, 106, 140, 1) 100%, rgba(0, 212, 255, 1) 100%);
+
+    background-size: 500%;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: 16px;
+    padding-inline-start: 16px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: loadingText 2s linear infinite;
+}
+
+@keyframes loadingText {
+    0% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+.preload {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    transition: 250ms ease;
+    ;
+}
+
+.preload>* {
+    transition: 250ms ease;
+    ;
+}
+
+.preload.loaded>* {
+    opacity: 0;
+}
+
+.preload.loaded {
+    transition-delay: 250ms;
+    transform: translateY(100%);
+}
+
+
+
+body {
+    background-color: white;
+    overflow: overlay;
+    height: 100%;
+}
+
+body .loaded {
+    overflow: overlay;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-image: url(./assets/img/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-block-end: 45px;
+    animation: scaleAnimation 3s linear infinite;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* ____________________________________________________PRELOADER ENDS   HERE______________________________________________________________________*/
+
+
+/* __________________________________________________SECTION TOP STARTS HERE______________________________________________________________________*/
+
+
+
+.sectionTop {
+    background-color: #010101;
+    width: 100%;
+    font-size: 15px;
+}
+
+
+.topBar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #010101;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: regular;
+    padding: 6px;
+}
+
+.topList a,
+.mobileCont a,
+.topNav a,
+.logo a {
+    color: var(--primary-font-color);
+    text-decoration: none;
+}
+
+.topList li,
+.topNav li {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.ourFactory:hover .ourFactoryInnerList {
+
+    display: block;
+
+}
+
+/* __________________________________________________SECTION TOP ENDS HERE______________________________________________________________________*/
+
+
+
+/* ___________________________________________________TOP NAVIGATION BAR STARTS HERE______________________________________________________________________*/
+
+
+.ourFactory {
+    position: relative;
+}
+
+.ourFactoryInnerList {
+    background-color: #2e2e2e;
+    white-space: nowrap;
+    width: fit-content;
+    position: absolute;
+
+    display: none;
+
+}
+
+
+.ourFactoryInnerList li {
+    padding: 17px 15px 0px;
+    display: block !important;
+    font-size: 15px;
+}
+
+.ourFactoryInnerList {
+    padding: 7px 0px 10px;
+
+}
+
+
+
+
+
+
+
+.ourFactoryInnerList .nav-item {
+    content: "";
+
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--primary-font-color);
+}
+
+.navbar-toggler i {
+    color: var(--secondary-font-color) black;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    background: none;
+    color: white;
+    border: none;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #2e2e2e;
+    position: sticky;
+    top: 0px;
+    --bs-navbar-padding-y: 0px;
+    z-index: 1;
+}
+
+
+.topNav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navBarSec {
+    height: 90px;
+}
+
+.bannerSection {
+
+    background-color: #2e2e2e;
+
+}
+
+.logo .logo1 {
+    height: 86.39px;
+    width: 91px;
+}
+
+.logo .logo2 {
+    width: 241.16px;
+    height: 51px;
+}
+
+
+
+.topRightNav {
+    width: 100%;
+    position: relative;
+}
+
+
+a.nav-link:hover {
+    color: var(--secondary-font-color);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.topRightNav li {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+
+}
+
+
+/* ___________________________________________________TOP NAVIGATION BAR ENDS  HERE______________________________________________________________________*/
+
+
+/* ___________________________________________________BANNER SECTION STARTS HERE______________________________________________________________________*/
+
+
+
+.businessIdeas {
+    color: var(--secondary-font-color);
+
+}
+
+
+.ourProfessionals {
+    letter-spacing: -0.16px;
+    line-height: 22.4px;
+    line-height: 140%;
+    color: var(--primary-font-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: regular;
+}
+
+.exploreNow {
+    height: 48px;
+    width: 179px;
+    font-size: 20px;
+    background: rgb(255, 202, 41);
+    background: linear-gradient(117deg,
+            rgba(255, 202, 41, 1) 0%,
+            rgba(242, 102, 0, 1) 62%);
+    border-radius: 30px;
+    border: none;
+    color: var(--secondary-section-bg);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+
+
+.carousel-item {
+
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out,
+        -webkit-transform .3s ease-in-out;
+}
+
+
+
+.container-xxl {
+    max-width: 1680px;
+}
+
+/* .container-xxl {
+
+    margin: 0px 50px !important;
+} */
+
+/* ___________________________________________________BANNER SECTION ENDS HERE______________________________________________________________________*/
+
+
+/* ___________________________________________________ BUSINESS  SECTION STARTS HERE______________________________________________________________________*/
+
+
+.businessModalSection {
+    width: 100%;
+    padding: 114px 10px 46px 30px;
+    background-color: var(--primary-section-bg);
+}
+
+
+
+.highlightTopCont {
+
+    letter-spacing: -1%;
+    font-weight: 900;
+}
+
+.businessModalCard {
+    background-color: var(--primary-font-color);
+    padding: 4px 66px 53px;
+}
+
+.businessCardTopImg {
+    background-image: url(./assets/img/Our-Brand.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+
+.businessCardTitle1 {
+    letter-spacing: -1%;
+    color: var(--secondary-section-bg);
+}
+
+
+.highlighTxt {
+    color: var(--secondary-font-color);
+}
+
+.highLightText2 {
+    color: #ff0000;
+}
+
+
+/* ___________________________________________________ BUSINESS  SECTION ENDS HERE______________________________________________________________________*/
+
+
+
+
+
+
+/* ___________________________________________________ OUR STORY SECTION STARTS HERE______________________________________________________________________*/
+
+.ourStorySectionCon .col-xl-5 .col-xl-7 {
+    min-height: 500px !important;
+}
+
+.ourStorySectionCon {
+
+    position: relative;
+
+}
+
+.ourStorySectionCon .nav-link {
+    color: var(--primary-font-color);
+    font-size: 20px;
+    opacity: 0.6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: regular;
+}
+
+.nav-link.active::before {
+    content: "";
+    height: 2px;
+    width: 47px;
+    background-color: var(--primary-font-color);
+    position: absolute;
+    bottom: 0px;
+}
+
+.ourStorySectionCon .nav-tabs {
+    position: relative;
+    border-bottom: 1px solid #CD092F;
+
+}
+
+.ourStorySectionCon .nav-tabs .nav-link.active {
+    background: none;
+    color: white;
+    border: none;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.ourStorySectionCon .nav-tabs .nav-link:hover {
+    color: white;
+    isolation: isolate;
+    border: none;
+}
+
+.ourStorySectionCon .nav-tabs .nav-link {
+    border: none;
+    padding-left: 0px;
+}
+
+.ourStorySectionCon .nav-tabs {
+    --bs-nav-tabs-border-width: none;
+}
+
+
+
+.ourStoryLeftSec {
+    padding: 104px 55px 82px;
+
+    background-color: var(--secondary-font-color);
+}
+
+
+.letUsTitle {
+    font-weight: 800;
+    color: var(--primary-font-color);
+}
+
+
+.ourStoryTitle {
+    font-weight: 900;
+    color: var(--secondary-section-bg);
+}
+
+#myTab {
+    margin-top: 72px;
+    margin-bottom: 33px;
+}
+
+
+
+.navContent {
+    font-weight: 500;
+    color: var(--primary-font-color);
+    letter-spacing: -1%;
+    overflow: auto;
+    text-align: justify !important;
+    line-height: 165%;
+}
+
+
+
+
+/* ___________________________________________________ OUR STORY SECTION ENDS HERE______________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+/* ___________________________________________________ OUR R & D SECTION STARTS HERE______________________________________________________________________*/
+
+
+.ourRD {
+    width: 100%;
+    padding: 120px 10px;
+    background-color: var(--secondary-section-bg);
+    position: relative;
+}
+
+
+.ourRDBtmContent {
+    color: var(--primary-font-color);
+    opacity: 0.8;
+    padding: 0px 80px;
+}
+
+.ourRdtitleTop {
+    color: var(--primary-font-color);
+    font-weight: 900;
+}
+
+
+.CardRandDTitle {
+    color: var(--primary-font-color);
+    text-align: center;
+}
+
+
+
+.CardRandDContent {
+    color: var(--primary-font-color);
+    text-align: center;
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+/* ___________________________________________________ OUR R & D SECTION ENDS HERE______________________________________________________________________*/
+
+
+
+/* ___________________________________________________ INSTA POST SECTION STARTS HERE______________________________________________________________________*/
+
+.InstaPostSection {
+    height: 970px;
+    width: 100%;
+    padding-top: 166px;
+    background-color: var(--primary-section-bg);
+
+}
+
+
+.instaCardSec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.instaModalCard {
+    padding: 342px 59px 23px;
+
+    /* height: 540px; */
+    background-color: var(--primary-font-color);
+    text-align: center;
+    margin-right: 14px;
+}
+
+
+
+.instaCardTitle1 {
+    letter-spacing: -1%;
+    color: var(--secondary-section-bg);
+}
+
+/* ___________________________________________________ INSTA POST SECTION ENDS HERE______________________________________________________________________*/
+
+
+
+
+
+/* ___________________________________________________ FOOTER SECTION STARTS HERE______________________________________________________________________*/
+
+footer {
+    width: 100%;
+    padding: 50px 40px 20px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footerNavList {
+    font-size: 16px;
+}
+
+footer li {
+    list-style-type: none;
+    line-height: 170%;
+}
+
+.footerTitle {
+    color: var(--secondary-font-color);
+    opacity: 1 !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900 !important;
+    font-size: 18px;
+}
+
+.footerTitle:hover {
+    color: var(--secondary-font-color) !important;
+}
+
+.footerSubMenu:hover {
+    font-weight: 600 !important;
+    color: white !important;
+}
+
+.footerNavList li a:hover {
+    text-decoration: none;
+}
+
+footer li a {
+    font-weight: 300;
+    text-decoration: none;
+    opacity: 0.6;
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-font-color);
+}
+
+
+
+.brandName {
+    height: 60px
+}
+
+.footerLogo {
+    height: 114px;
+    margin-top: -25px;
+}
+
+.disclaimer {
+    margin-top: 25px;
+    opacity: 0.6;
+    line-height: 1.7;
+}
+
+
+/* ___________________________________________________ FOOTER SECTION ENDS HERE______________________________________________________________________*/
+
+
+
+/* ___________________________________________________ MODAL PAGE STYLES ______________________________________________________________________*/
+
+
+/* ___________________________________________________ BUSINESS WITH OUR BRAND STARTS HERE ______________________________________________________________________*/
+
+
+.model-section {
+    position: relative;
+    top: 200px;
+
+}
+
+/* ___________________________________________________ BUSINESS WITH OUR BRAND ENDS HERE ______________________________________________________________________*/
+
+
+.highlightClr {
+    color: var(--secondary-font-color);
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+
+.ourStoryRightSec img {
+    width: 100%;
+}
+
+.businessIdeas {
+    color: var(--secondary-font-color);
+    font-weight: 900;
+}
+
+button[type="submit"] {
+
+    background-color: #e51b43;
+    font-size: 26px;
+    padding: 16px 42px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800 !important;
+    border-radius: 4px;
+    letter-spacing: -1px;
+}
+
+
+.content-nav {
+    margin-right: 469px;
+    margin-top: 126px;
+}
+
+.hideItem1 a.active::before {
+    background-color: #2e2e2e !important;
+}
+
+.topRightNav li a.active::before {
+    content: "";
+    height: 2px;
+    width: 15px;
+    background-color: RED;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0px;
+}
+
+.career .contactUs {
+    display: inline-block;
+
+}
+
+.model-section {
+    padding: 166px 0px 100px;
+    background-color: #EEF8FB;
+
+}
+
+.model-para.para1 {
+    margin-top: 57px;
+    text-align: justify;
+}
+
+.para2,
+.para3 {
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.success {
+
+    background-color: black;
+    color: white;
+    padding: 109px 0px;
+}
+
+.nav-item.hiddenNavItem {
+    display: none;
+}
+
+.form-group {
+    margin: 0px 5px 17px;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.form-group input,
+textarea.form-control {
+    padding: 20px 35px;
+    border-radius: 4px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -1px;
+    font-weight: 500;
+    color: #838D90;
+    outline: none !important;
+    appearance: none !important;
+}
+
+.form-group input::placeholder,
+textarea::placeholder {
+    font-size: 18px;
+}
+
+.form-group input:active {
+    border: none !important;
+}
+
+.contact-form {
+    background-color: #EEF8FB;
+    padding: 96px 86px 64px;
+}
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+}
+
+button i {
+    color: #ff0000 !important;
+}
+
+.connect {
+    padding-bottom: 98px;
+}
+
+.readMoreLink {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.error-input {
+    border-color: red !important;
+}
+
+.error-input::placeholder {
+    color: red;
+}
+
+.noerror-input {
+    border-color: green !important;
+}
+
+.numberPara {
+    color: var(--secondary-font-color);
+}
+
+button[type="submit"] {
+
+
+    margin: 14px 7px;
+
+}
+
+.leftHideSection {
+    display: none;
+}
+
+.ourStorySectionCon {
+    height: fit-content;
+    width: 100%;
+    background-color: var(--secondary-font-color);
+    background-image: url(./assets/img/ourStory.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.hiddenNavContact {
+    display: none;
+}
+
+.mainTitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.dropdown-menu {
+    padding: 10px 0px 10px 0px;
+}
+
+.dropdown-menu li {
+    padding-right: 0px !important;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    background: #2e2e2e;
+    ;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+
+    width: 1rem !important;
+    height: 1rem !important;
+
+}
+
+@media screen and (min-width: 1199px) {
+
+
+    .ourStorySectionCon .nav-tabs .nav-link {
+        border: none;
+        padding-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .ourStorySectionCon .nav-tabs .nav-link {
+        border: none;
+        padding-right: 40px;
+    }
+
+    .topList li,
+    .topNav li {
+
+        padding-right: 5px;
+    }
+
+    .leftHideSection {
+        display: block;
+        padding: 0% 3% 3%;
+        width: 100%;
+        background-color: #e51b43;
+    }
+
+
+    .ourStorySectionCon {
+        background-image: none;
+
+    }
+
+    .ourStorySectionCon {
+        background-color: white;
+    }
+
+    .InstaPostSection {
+        height: 1505px;
+    }
+
+    .leftHideSection {
+        display: block;
+    }
+
+
+    .brandName {
+        height: 45px;
+    }
+
+    .footerLogo {
+        height: 76px;
+    }
+
+    .footerLogo {
+
+        margin-top: -14px;
+    }
+
+    .contact-form {
+        background-color: #EEF8FB;
+        padding: 95px 55px 74px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    iframe {
+        min-height: 500px;
+    }
+
+    .nav-item.hiddenNavItem {
+        display: block;
+    }
+
+    .topRightNav li a.active::before {
+        content: "";
+        height: 2px !important;
+        width: 15px !important;
+        background-color: RED !important;
+        z-index: 1000 !important;
+        position: absolute !important;
+        bottom: 0px !important;
+    }
+
+
+    .ourFactoryInnerList li a.active::before {
+        content: "";
+        background-color: #2e2e2e !important;
+
+    }
+
+    .ourFactoryInnerList {
+        display: none;
+    }
+
+
+    #myTab {
+        margin-top: 24px;
+    }
+
+    .ourRDBtmContent {
+
+        padding: 0px 80px;
+    }
+
+    .ourRD {
+        padding: 121px 10px 80px
+    }
+
+    .instaCardContent {
+        padding: 0px 50px;
+    }
+
+    .businessModalCard {
+
+        padding: 40px;
+    }
+
+    .businessModalSection {
+        height: 1665px;
+    }
+
+    .footerLogo {
+        height: 71px;
+
+        margin-bottom: 10px
+    }
+
+    .brandName {
+        height: 45px;
+        margin-bottom: 10px;
+    }
+
+
+    .ourStoryLeftSec {
+        padding: 65px 59px 50PX;
+    }
+
+    .topRightNav li a.active::before {
+        display: none;
+        z-index: 1000 !important;
+        position: absolute !important;
+        bottom: 0px !important;
+    }
+
+    .topRightNav {
+        width: 100%;
+        padding-top: 5px;
+        background-size: cover;
+    }
+
+    .topRightNav li {
+        padding-left: 50px !important;
+        width: 100%;
+        text-align: left;
+    }
+
+    .InstaPostSection {
+        height: 2003px;
+
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+
+    #disclaimerbottom {
+        text-align: left;
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #disclaimerTop {
+
+        display: none;
+    }
+
+    #disclaimerbottom {
+        text-align: left !important;
+        display: block !important;
+    }
+
+    .model-section,
+    .success {
+        padding: 94px 6px 100px;
+
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+
+    h2 {
+        font-size: 43px;
+    }
+
+    h3 {
+
+        font-size: 24px;
+    }
+
+
+    .InstaPostSection {
+        height: 1924px;
+    }
+
+    .businessModalSection,
+    .InstaPostSection {
+        height: fit-content;
+        padding: 69px 8px;
+    }
+
+    .ourStoryLeftSec {
+        padding: 97px 66px;
+
+    }
+
+    .topList li {
+        padding-right: 5px;
+    }
+
+    .ourRDBtmContent {
+        padding: 0px;
+    }
+
+    .businessModalCard {
+        padding: 40px;
+    }
+}
+
+
+@media screen and (max-width: 559px) {
+
+    .instaModalCard {
+        padding: 250px 0px 35px;
+    }
+
+    .topList ol,
+    ul {
+        padding-left: 0px;
+    }
+
+    .topBar {
+        font-size: 10px;
+        padding: 0px;
+
+
+    }
+
+    .topList li,
+    .topNav li {
+
+        padding-right: 0px;
+    }
+
+
+}
+
+
+@media only screen and (max-width:576px) {
+    .ourStorySectionCon .nav-tabs .nav-link {
+        border: none;
+        padding-right: 25px;
+    }
+
+
+    .contact-form {
+        overflow-x: hidden;
+    }
+
+    .brandName {
+        height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .footerLogo {
+
+        margin-bottom: 21px;
+    }
+
+    .connect {
+        padding-left: 20px;
+        padding-bottom: 45px;
+    }
+
+    .container-fluid {
+
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .footerRow .footerColumn {
+        max-width: 170px;
+    }
+
+    footer li {
+        padding-left: 18%;
+    }
+
+    .logo .logo2 {
+        height: 36px;
+        width: 170px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding: 90px 16px 56px;
+    }
+
+    .preload .text {
+        font-size: 1.7rem;
+    }
+
+    footer {
+        padding: 50px 20px 20px;
+    }
+
+    .ourStoryLeftSec {
+        padding: 80px 31px;
+    }
+
+    .nav-item.hiddenNavItem {
+        display: inline-block;
+    }
+
+    .topList .hideItem {
+        display: none !important;
+    }
+
+
+    .businessModalCard {
+        padding: 25px;
+    }
+
+
+
+    .highlightTopCont {
+
+        font-size: 26px;
+    }
+
+    .highlightClr {
+
+        font-size: 40px;
+    }
+
+
+
+    .topBar {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .topList li,
+    .topNav li {
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    .logo .logo1 {
+        height: 50px;
+        width: 50px;
+    }
+
+    .exploreNow {
+        height: 38px;
+        width: 129px;
+        font-size: 14px;
+
+    }
+
+    .businessCardTitle1 {
+
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    #myTab {
+        margin-top: -7px;
+    }
+
+    .ourStorySectionCon .nav-link {
+        font-size: 16px;
+    }
+
+    .ourStoryLeftSec {
+        padding: 46px 20px 39px;
+    }
+
+    .footerLogo {
+        height: 74px;
+    }
+
+    .brandName {
+        height: 34px;
+    }
+
+
+    .ourRD {
+        padding: 120px 0px 0px 0px;
+    }
+
+    footer li {
+
+        padding-left: 16%;
+    }
+
+    .instaCardContent {
+        padding: 0px 35px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .hiddenNavContactTop {
+        display: none !important;
+    }
+
+    button[type="submit"] {
+
+        padding: 13px 18px;
+
+    }
+
+    .ourStorySectionCon .nav-tabs .nav-link {
+
+        padding-right: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 359px) {
+    .businessModalCard {
+        padding: 20px;
+    }
+
+    .businessModalSection {
+        height: 1106px;
+    }
+
+}
+
+@media screen and (min-width: 401px) {
+
+    .hiddenNavContact {
+        display: none !important;
+    }
+
+
+    .ourStorySectionCon .nav-tabs .nav-link {
+        border: none;
+        padding-right: 14px;
+    }
+
+
+}
+
+@media screen and (min-width: 450px) {
+
+
+    .ourStorySectionCon .nav-tabs .nav-link {
+        border: none;
+        padding-right: 17px;
+    }
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+    .instaCardContent {
+        padding: 0px 10px;
+    }
+
+    .ourRD {
+        height: 1883px;
+
+    }
+
+    .businessModalSection {
+        height: 1200px;
+        padding: 64px 1px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .businessModalCard {
+        padding: 10px 9px 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+
+    /* .ourFactory:hover .ourFactoryInnerList {
+
+        display: block;
+
+    } */
+}
+
+@media screen and (min-width: 600px) {
+
+    .ourStorySectionCon .nav-tabs .nav-link {
+
+        padding-right: 30px;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .ourStorySectionCon .nav-tabs .nav-link {
+
+        padding-right: 60px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .ourStorySectionCon .nav-tabs .nav-link {
+        /* border: none; */
+        padding-right: 60px;
+    }
+
+
+    #carouselExampleAutoplaying .carousel-item img {
+        /* background-color: var(--secondary-section-bg); */
+        height: 850px;
+
+        /* background-size: cover; */
+    }
+
+}

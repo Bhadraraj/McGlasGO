@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gobold Extra2';
+    src: url('GoboldExtra2.eot');
+    src: url('GoboldExtra2.eot?#iefix') format('embedded-opentype'),
+        url('GoboldExtra2.woff2') format('woff2'),
+        url('GoboldExtra2.woff') format('woff'),
+        url('GoboldExtra2.ttf') format('truetype'),
+        url('GoboldExtra2.svg#GoboldExtra2') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
